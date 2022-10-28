@@ -1,10 +1,11 @@
 {
   "name": "foodragon",
   "version": "1.0.0",
-  "description": "Beautiful recipe search engine made with modern JavaScript features \uD83D\uDE0B\uD83C\uDF74",
-  "main": "index.js",
+  "description": "Beautiful recipe search engine made with modern JavaScript features 😋🍴",
+  "main": "./src/js/controller.js",
   "scripts": {
-    "test": "Search for example about \"Pizza\""
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/devmuzaky/FooDragon/issues"
   },
-  "homepage": "https://github.com/devmuzaky/FooDragon#readme"
+  "homepage": "https://github.com/devmuzaky/FooDragon#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-glob-import": "^1.0.1",
+    "core-js": "^3.26.0",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.10"
+  }
 }
