@@ -19,8 +19,11 @@
   "homepage": "https://github.com/devmuzaky/FooDragon#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "buffer": "^6.0.3",
     "parcel": "^2.7.0",
-    "sass": "^1.55.0"
+    "process": "^0.11.10",
+    "sass": "^1.55.0",
+    "util": "^0.12.5"
   },
   "dependencies": {
     "babel-plugin-transform-glob-import": "^1.0.1",

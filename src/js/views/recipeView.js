@@ -1,7 +1,5 @@
 import View from "./view";
-// import icons
 import icons from 'url:../../img/icons.svg'; // Parcel 2
-// import fractional
 import {Fraction} from 'fractional';
 
 export class RecipeView extends View {
