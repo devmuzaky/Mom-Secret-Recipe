@@ -32,7 +32,11 @@ export class RecipeView {
         this.#parentElement.insertAdjacentHTML('afterbegin', markup);
     }
 
-    renderError(message = this.#errorMessage) {
+    addHandlerRender(handler) {
+        ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
+    }
+
+    renderMessages(message = this.#message) {
         const markup = `
             <div class="error">
                 <div>
@@ -46,6 +50,7 @@ export class RecipeView {
         this.#clear();
         this.#parentElement.insertAdjacentHTML('afterbegin', markup);
     }
+
 
     renderMessage(message = this.#message) {
         const markup = `
