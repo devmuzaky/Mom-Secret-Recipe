@@ -3,6 +3,7 @@ import {API_URL, RES_PER_PAGE} from './config.js';
 import {getJSON} from "./helpers";
 
 
+
 export const state = {
     recipe: {},
     search: {
@@ -10,10 +11,8 @@ export const state = {
         results: [],
         page: 1,
         resultsPerPage: RES_PER_PAGE,
-
     },
     bookmarks: [],
-
 
 }
 
@@ -51,6 +50,7 @@ export const loadSearchResults = async function (query) {
                 ...(rec.key && {key: rec.key})
             }
         })
+        state.recipe.page = 1;
     } catch (err) {
         throw err;
     }
@@ -61,4 +61,12 @@ export const getSearchResultsPage = function (page = state.search.page) {
     const start = (page - 1) * state.search.resultsPerPage;
     const end = page * state.search.resultsPerPage;
     return state.search.results.slice(start, end)
+}
+
+export const updateServings = function (newServings) {
+    state.recipe.ingredients.forEach(ing => {
+        ing.quantity = ing.quantity * newServings / state.recipe.servings;
+    })
+
+    state.recipe.servings = newServings;
 }
