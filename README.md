@@ -9,8 +9,6 @@
   <p align="center">
    A beautiful recipe search engine made with modern JavaScript features 😋🍴
     <br />
-    <a href="#about-the-project"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://mom-secret-recipe.netlify.app">View Demo</a>
     ·
