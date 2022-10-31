@@ -51,11 +51,7 @@
 
 ## About The Project
 
-[![Mom Secret Recipe][
-
-https://user-images.githubusercontent.com/55113727/198995982-a818075f-d5c8-46ee-b978-37821113e8f8.mp4
-
-]](https://mom-secret-recipe.netlify.app/)
+[![Mom Secret Recipe][https://user-images.githubusercontent.com/55113727/198995982-a818075f-d5c8-46ee-b978-37821113e8f8.mp4]](https://mom-secret-recipe.netlify.app/)
 
 "Mom Secret Recipe" =>   is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data. This app uses modern JavaScript tools, such as Parcel to bundle the modules, and Babel to convert ES6, ES7 and ES8 back to ES5. The user can search for a specific recipe, and save to a favorites list via local storage. The user can easily increase or decrease servings as per his need and can view detailed directions.
 
