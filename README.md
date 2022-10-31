@@ -12,7 +12,7 @@
     <a href="#about-the-project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://mom-secret-recipe.netlify.app/">View Demo</a>
+    <a href="https://user-images.githubusercontent.com/55113727/198995982-a818075f-d5c8-46ee-b978-37821113e8f8.mp4">View Demo</a>
     ·
     <a href="https://github.com/devmuzaky/Mom-Secret-Recipe/issues">Report Bug</a>
     ·
