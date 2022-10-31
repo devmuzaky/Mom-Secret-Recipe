@@ -13,20 +13,20 @@ export class RecipeView extends View {
     }
 
     addHandlerUpdateServings(handler) {
-        this._parentElement.addEventListener('click', function (e){
+        this._parentElement.addEventListener('click', function (e) {
             const btn = e.target.closest('.btn--update-servings')
-            if(!btn) return;
+            if (!btn) return;
             const updateTo = +btn.dataset.updateTo;
-            if(updateTo > 0 ) handler(updateTo);
+            if (updateTo > 0) handler(updateTo);
 
 
         })
     }
 
-    addHandlerAddBookmark(handler){
-        this._parentElement.addEventListener('click', function (e){
+    addHandlerAddBookmark(handler) {
+        this._parentElement.addEventListener('click', function (e) {
             const btn = e.target.closest('.btn--bookmark')
-            if(!btn) return;
+            if (!btn) return;
             handler();
         })
     }

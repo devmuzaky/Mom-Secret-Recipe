@@ -24,7 +24,6 @@ export default class View {
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
     }
 
-
     /**
      *
      * @param {Object} data The data to be updated (e.g. recipe)
@@ -98,6 +97,4 @@ export default class View {
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
     }
-
-
 }
