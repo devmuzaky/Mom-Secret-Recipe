@@ -2,10 +2,10 @@
   "name": "foodragon",
   "version": "1.0.0",
   "description": "Beautiful recipe search engine made with modern JavaScript features 😋🍴",
-  "main": "./src/js/controller.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-scope-hoist"
   },
   "repository": {
     "type": "git",
